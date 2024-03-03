@@ -15,7 +15,7 @@ nav .barra {
     justify-content: space-between;
     align-items: center;
     gap: 16px;
-    padding: 0 64px;
+    padding: 5px 64px;
     background-color: #fff;
 }
 
@@ -24,16 +24,19 @@ nav .barra .parteDer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 24px;
+    gap: 32px;
 }
 
 nav .barra .parteIzq {
     padding-right: 48px;
+    display: flex;
+    gap: 8px;
 }
 
-nav .barra .Linkedin {
-    font-size: 40px;
+nav .barra .Linkedin i {
+    font-size: 35px;
     color: blue;
+    cursor: pointer;
 }
 
 nav .barra .parteIzq .buscador {
@@ -42,10 +45,83 @@ nav .barra .parteIzq .buscador {
     padding: 8px 32px;
     display: flex;
     gap: 8px;
+    border-radius: 3px;
 }
 
-nav .barra .parteIzq .buscadorinput {
-    border: 0;
-    width: 240px;
+nav .barra .parteIzq .buscador input[type='search'] {
+    width: 224px;
+    border: none;
     background: transparent;
+}
+
+nav .barra .parteIzq .buscador input[type='search']::placeholder {
+    font-size: 13px;
+    color: rgb(49, 49, 49);
+    font-weight: 100;
+}
+
+nav .barra .parteIzq .buscador i {
+    color: gray;
+}
+
+.casa,
+.usuario,
+.trabajo,
+.Chat,
+.campana,
+.user,
+.extras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    color: gray;
+}
+
+.casa:hover,
+.usuario:hover,
+.trabajo:hover,
+.Chat:hover,
+.campana:hover,
+.user .flecha:hover,
+.extras .flecha:hover {
+    color: black;
+}
+
+.casa i,
+.usuario i,
+.trabajo i,
+.Chat i,
+.campana i {
+    font-size: 24px;
+}
+
+.user .flecha,
+.extras .flecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+nav .barra .parteDer .user i:first-child {
+    background-color: gray;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra a {
+    font-size: 13px;
+    width: 112px;
+    text-align: center;
+    cursor: pointer;
+    color: goldenrod;
 }
