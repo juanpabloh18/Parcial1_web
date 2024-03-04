@@ -1,14 +1,80 @@
-nav {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-.logo {
-    width: 10%;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: #f0f2f5;
+        color: #5f5f5f;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #5f5f5f;
+    }
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff;
+        padding: 6px 6%;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .logo img {
+        width: 30%;
+        margin-right: 15px;
+        display: block;
+    }
+    
+    .navbar-centro ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .navbar-centro ul li {
+        list-style: none;
+        margin: 0 8px;
+    }
+    
+    .navbar-centro ul li a {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 14px;
+        margin: 5px 8px;
+        padding-right: 5px;
+    }
+    
+    .navbar-centro ul li .foto-perfil {
+        width: 35px;
+        margin-bottom: 8px;
+        margin-top: 5px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .navbar-centro ul li .foto-perfil img {
+        width: 100%;
+    }
+    
+    .navbar-centro ul li span {
+        font-size: 14px;
+        text-align: center;
+        display: block;
+    }
+    
+    .navbar-centro ul li a:hover {
+        color: black;
+    }
