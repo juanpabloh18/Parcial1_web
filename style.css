@@ -1,0 +1,14 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.logo {
+    width: 10%;
+}
