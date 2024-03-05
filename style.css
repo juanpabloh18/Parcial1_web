@@ -14,6 +14,10 @@
         font-size: 10px
     }
     
+    nav {
+        position: fixed;
+    }
+    
     nav .barra {
         display: flex;
         justify-content: space-between;
@@ -174,9 +178,7 @@
         border-radius: 10px;
         overflow: hidden;
         margin-right: 25px;
-        position: sticky;
-        top: 73px;
-        /* Separación entre las barras */
+        margin-top: 65px;
     }
     
     .sidebar-profile-box {
@@ -327,10 +329,11 @@
         /* Eliminar margen izquierdo */
         display: flex;
         flex-direction: column;
+        margin-top: 65px;
     }
     
     .siderbar-feed {
-        height: 415px;
+        height: 425px;
         background-color: #f2f2f2;
         border: 1px solid #d9d9d9;
         border-radius: 18px;
@@ -397,84 +400,21 @@
         background-color: #d9d9d9;
     }
     
-    p.ver-recomendaciones {
+    .siderbar-feed .recomend {
         font-size: 14px;
         text-align: center;
         margin-top: 10px;
-        color: gray;
     }
     
-    .sidebar-opcion {
+    .sidebar-opcion img {
         height: 290px;
+        width: 350px;
         margin-top: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        border: 1px solid rgba(199, 192, 192, 0.5);
         border-radius: 10px;
-        margin-bottom: 10px;
-    }
-    
-    .link {
-        width: 80px;
-        border-radius: 50%;
-        margin-right: 30px;
-    }
-    
-    .link-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    
-    .selecion p {
-        font-weight: bold;
-        text-align: center;
-        margin: 0;
-        font-size: 18px;
-    }
-    
-    .sidebar-opcion button {
-        padding: 10px 12px;
-        margin-top: 20px;
-        color: blue;
-        background-color: transparent;
-        border: 1px solid blue;
-        border-radius: 20px;
-        width: 70%;
-    }
-    
-    .sidebar-opcion button:hover {
-        background-color: lightblue;
-        cursor: pointer;
-    }
-    
-    .link:hover {
-        opacity: 0.8;
-    }
-    
-    .texto-superior {
-        margin-top: 10px;
-        /* Ajusta el margen superior del texto */
-        margin-bottom: 10px;
-        /* Ajusta el margen inferior del texto */
-    }
-    
-    .texto-superior p {
-        font-size: 16px;
-        /* Ajusta el tamaño de la fuente del texto */
-        font-weight: normal;
-        /* Ajusta el peso de la fuente del texto */
-        text-align: center;
-        /* Centra el texto */
     }
     
     .right-main-3 {
-        height: 200px;
+        height: 290px;
     }
     
     .footer {
@@ -528,6 +468,7 @@
     .contenedor-centro {
         flex-basis: 47%;
         border-radius: 45px;
+        margin-top: 65px;
     }
     
     .create-post {
@@ -570,12 +511,18 @@
         list-style: none;
         border-radius: 1px solid #ccc;
         flex-basis: 25%;
-        height: 40px;
+        height: 45px;
         font-size: 13px;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
+    }
+    
+    .create-post-links li img {
+        margin: 15px;
+        justify-content: space-between;
+        align-items: center;
     }
     
     .sort-by {
