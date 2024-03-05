@@ -169,6 +169,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        top: 80px;
     }
     /* Barra izquierda*/
     
@@ -406,6 +407,11 @@
         margin-top: 10px;
     }
     
+    .mantener-posicion {
+        position: sticky;
+        top: 80px;
+    }
+    
     .sidebar-opcion img {
         height: 290px;
         width: 350px;
@@ -443,21 +449,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-    
-    .messaging {
-        display: flex;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        background-color: white;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-        border: 1px solid rgba(199, 192, 192, 0.5);
-        align-items: center;
-        width: 250px;
-        justify-content: space-between;
-        padding: 10px;
     }
     
     .position {
@@ -636,4 +627,30 @@
     .post-activity-links img {
         width: 18px;
         margin-right: 8px;
+    }
+    
+    .messaging {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border: 1px solid rgba(199, 192, 192, 0.5);
+        align-items: center;
+        width: 250px;
+        justify-content: space-between;
+        padding: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .messaging img {
+        border-radius: 50%;
+        width: 25px;
+    }
+    
+    .position {
+        position: sticky;
+        top: 80px;
     }
