@@ -1,80 +1,138 @@
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-        box-sizing: border-box;
-    }
-    
-    body {
-        background: #f0f2f5;
-        color: #5f5f5f;
-    }
-    
-    a {
-        text-decoration: none;
-        color: #5f5f5f;
-    }
-    
-    .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background: #fff;
-        padding: 6px 6%;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    .logo img {
-        width: 30%;
-        margin-right: 15px;
-        display: block;
-    }
-    
-    .navbar-centro ul {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .navbar-centro ul li {
-        list-style: none;
-        margin: 0 8px;
-    }
-    
-    .navbar-centro ul li a {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        font-size: 14px;
-        margin: 5px 8px;
-        padding-right: 5px;
-    }
-    
-    .navbar-centro ul li .foto-perfil {
-        width: 35px;
-        margin-bottom: 8px;
-        margin-top: 5px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        position: relative;
-    }
-    
-    .navbar-centro ul li .foto-perfil img {
-        width: 100%;
-    }
-    
-    .navbar-centro ul li span {
-        font-size: 14px;
-        text-align: center;
-        display: block;
-    }
-    
-    .navbar-centro ul li a:hover {
-        color: black;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+nav .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 5px 64px;
+    background-color: #fff;
+}
+
+nav .barra .parteIzq,
+nav .barra .centro,
+nav .barra .parteDer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+nav .barra .parteIzq,
+nav .barra .centro {
+    padding-right: 48px;
+    display: flex;
+    gap: 50px;
+}
+
+nav .barra .Linkedin i {
+    font-size: 35px;
+    color: blue;
+    cursor: pointer;
+}
+
+nav .barra .parteIzq .buscador {
+    background: rgb(226, 245, 250);
+    width: 100%;
+    padding: 8px 32px;
+    display: flex;
+    gap: 8px;
+    border-radius: 3px;
+}
+
+nav .barra .parteIzq .buscador input[type='search'] {
+    width: 224px;
+    border: none;
+    background: transparent;
+}
+
+nav .barra .parteIzq .buscador input[type='search']::placeholder {
+    font-size: 13px;
+    color: rgb(49, 49, 49);
+    font-weight: 100;
+}
+
+nav .barra .parteIzq .buscador i {
+    color: gray;
+}
+
+.casa,
+.usuario,
+.trabajo,
+.Chat,
+.campana,
+.user,
+.extras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    color: gray;
+}
+
+.casa:hover,
+.usuario:hover,
+.trabajo:hover,
+.Chat:hover,
+.campana:hover,
+.user .flecha:hover,
+.extras .flecha:hover {
+    color: black;
+}
+
+.casa i,
+.usuario i,
+.trabajo i,
+.Chat i,
+.campana i {
+    font-size: 24px;
+}
+
+.user .flecha,
+.extras .flecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+nav .barra .parteDer .user i:first-child {
+    background-color: gray;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra a {
+    font-size: 13px;
+    width: 112px;
+    text-align: center;
+    cursor: pointer;
+    color: goldenrod;
+}
+
+nav .barra .centro {
+    margin-left: 45px;
+}
+
+nav .barra .parteIzq {
+    margin-left: 100px;
+    gap: 5px;
+}
