@@ -327,7 +327,6 @@
         flex-basis: 23%;
         width: 290px;
         margin-left: 0;
-        /* Eliminar margen izquierdo */
         display: flex;
         flex-direction: column;
         margin-top: 65px;
